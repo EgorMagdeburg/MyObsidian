@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Рамка формата A 4 с текстом</title>
+<style>
+  .a 4-frame {
+    Width: 210 mm;
+    Height: 297 mm;
+    Margin: 20 px auto;
+    Border: 2 px solid black; /* Рамка */
+    Box-sizing: border-box;
+    Background-color: white;
+    Padding: 20 mm;
+    Font-family: "Times New Roman", serif;
+    Font-size: 14 pt;
+    Line-height: 1.5;
+    color: #000 ;
+  }
+
+  @media print {
+    Body, html {
+      Margin: 0;
+      Padding: 0;
+    }
+    .a 4-frame {
+      Margin: 0;
+      Border: 1 px solid black;
+      Box-shadow: none;
+      Page-break-after: always;
+      Padding: 20 mm;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="a4-frame">
+    <h1>Заголовок документа</h1>
+    <p>Это пример текста в рамке, имитирующей формат листа A 4. Вы можете заполнять этот блок любым содержимым: абзацами, списками, таблицами или изображениями.</p>
+    <p>Шрифт установлен как Times New Roman, размер 14 пунктов, а межстрочный интервал — 1.5 для удобочитаемости и делового стиля.</p>
+  </div>
+</body>
+</html>

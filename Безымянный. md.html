@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Рамка формата A4</title>
+<style>
+  .a4-frame {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    border: 2px solid black; /* Толщина и цвет рамки */
+    box-sizing: border-box;
+    background-color: white;
+  }
+
+  /* Опционально: для печати установим отступы */
+  @media print {
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+    .a4-frame {
+      margin: 0;
+      box-shadow: none;
+      border: 1px solid black;
+      page-break-after: always;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="a4-frame">
+    <!-- Контент вашего документа здесь -->
+  </div>
+</body>
+</html>
