@@ -1,1 +1,107 @@
-привет
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Документ</title>
+<style>
+  @page {
+    Size: A 4;
+    Margin: 20 mm 20 mm 20 mm 20 mm;
+  }
+  Body {
+    Font-family: "Times New Roman", serif;
+    Font-size: 12 pt;
+    Line-height: 1.4;
+    Margin: 0;
+    Padding: 0;
+  }
+  .container {
+    Width: 210 mm;
+    Min-height: 297 mm;
+    Padding: 20 mm;
+    Box-sizing: border-box;
+    border: 1 px solid #000 ;
+  }
+  .header {
+    Text-align: center;
+    Font-weight: bold;
+    Font-size: 12 pt;
+    Line-height: 1.2;
+  }
+  .header .small {
+    Font-weight: normal;
+    Font-size: 10 pt;
+  }
+  .header .spacer {
+    Margin: 4 mm 0;
+  }
+  .address {
+    Text-align: center;
+    Font-size: 10 pt;
+    Margin-top: 4 mm;
+    Margin-bottom: 10 mm;
+    Line-height: 1.2;
+  }
+  .document-info {
+    Margin-top: 10 mm;
+    Margin-bottom: 10 mm;
+  }
+  .document-info .number-line {
+    border-bottom: 1 px solid #000 ;
+    Width: 60 mm;
+    Display: inline-block;
+    Vertical-align: middle;
+    Margin-left: 5 mm;
+    Margin-right: 5 mm;
+  }
+  .document-info p {
+    Margin: 0;
+    Display: inline-block;
+    Vertical-align: middle;
+  }
+  .signature-section {
+    Margin-top: 30 mm;
+    Font-size: 12 pt;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      ПРАВИТЕЛЬСТВО САНКТ-ПЕТЕРБУРГА<br />
+      КОМИТЕТ ПО СОЦИАЛЬНОЙ ПОЛИТИКЕ<br />
+      САНКТ-ПЕТЕРБУРГА<br />
+      САНКТ-ПЕТЕРБУРГСКОЕ ГОСУДАРСТВЕННОЕ<br />
+      БЮДЖЕТНОЕ СТАЦИОНАРНОЕ УЧРЕЖДЕНИЕ<br />
+      СОЦИАЛЬНОГО ОБСЛУЖИВАНИЯ<br />
+      НАСЕЛЕНИЯ<br />
+      «ДОМ СОЦИАЛЬНОГО ОБСЛУЖИВАНИЯ<br />
+      «СТРЕЛЬНА»<br />
+      (СПб ГБСУСОН «ДСО «СТРЕЛЬНА»)<br />
+      <span class="small">Санкт-Петербургское шоссе, д. 130 литера В,<br />
+      г. Петергоф, Санкт-Петербург, 198510<br />
+      Телефон: 246-78-41<br />
+      ОКПО 03155803 ОКОГУ 23410 ОГРН 1027808915485<br />
+      ИНН/КПП 7819017673/781901001</span>
+    </div>
+
+    <div class="document-info">
+      <p>_____________ № </p><span class="number-line"></span>
+      <p>На № </p><span class="number-line"></span>
+      <p>от</p><span class="number-line"></span>
+    </div>
+
+    <div style="margin-top: 20mm;">
+      <p><strong>{{организация}}</strong></p>
+      <br /><br />
+      <p><strong>{{наименование-документа}}</strong></p>
+      <br /><br />
+      <p>Представитель по доверенности​<br />Карпов Е. О.</p>
+    </div>
+
+    <div class="signature-section">
+      <!-- Можно добавить подписи или другую информацию здесь -->
+    </div>
+  </div>
+</body>
+</html>
