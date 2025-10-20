@@ -22,3 +22,4 @@ button.addEventListener('click', updateCounter);
 output.appendChild(button);
 output.appendChild(counterElement);
 ```
+
